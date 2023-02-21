@@ -1,0 +1,105 @@
+/* head of the chat */
+.head {
+    display: flex;
+}
+
+.head h1 {
+    margin-left: auto;
+}
+
+/* message body section */
+/* .message-body {} */
+
+.message-body div {
+    position: relative;
+    align-items: center;
+    word-break: break-word;
+    display: inline-flex;
+    background: white;
+    margin-bottom: .3em;
+    border-radius: 7px;
+    min-height: 3em;
+    padding: 0.5em;
+}
+
+/* pin tip on left */
+.message-body .leftish {
+    position: relative;
+    direction: ltr;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+}
+
+.message-body .leftish::after {
+    content: '';
+    position: absolute;
+    left: -0.15em;
+    bottom: 0em;
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+}
+
+/* pin tip on right */
+.message-body .rightish {
+    position: relative;
+    direction: rtl;
+    background-color: rgb(158, 158, 158);
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+}
+
+.message-body .rightish::after {
+    content: '';
+    position: absolute;
+    right: -0.15em;
+    bottom: 0em;
+    width: 7px;
+    height: 7px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+}
+
+/* image person of each color */
+.message-body div::before {
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 6px 0 whitesmoke;
+}
+
+.message-body .rightish::before {
+    content: '';
+    position: absolute;
+    right: -1.7em;
+    bottom: 0;
+}
+
+.message-body .leftish::before {
+    content: '';
+    position: absolute;
+    left: -1.7em;
+    bottom: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: .5em;
+    position: absolute;
+    background: white;
+    border: 1px solid blue;
+    width: 95%;
+    border-radius: 100vmax;
+    right: 0;
+    transform: translateX(-3%);
+    height: 3em;
+}
+.footer .user-input {
+    text-align: right;
+}

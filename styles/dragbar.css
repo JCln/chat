@@ -1,0 +1,29 @@
+.drag-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+[class^="panel"] {
+    padding: 2em;
+    background-color: white;
+}
+
+.panel-one {
+    position: relative;
+    min-width: 19rem;
+    width: 50%;
+    margin: .5em;
+    background: lightgray;
+    border-radius: 7px;
+    box-shadow: 0 0 6px 0px lightgray;
+}
+
+.panel-two {
+    width: 47%;
+}
+
+.dragbar {
+    padding: 2px;
+    cursor: col-resize;
+    background-color: silver;
+}
