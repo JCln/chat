@@ -8,7 +8,9 @@
 }
 
 /* message body section */
-/* .message-body {} */
+.message-body {
+    display: grid;
+}
 
 .message-body div {
     position: relative;
@@ -25,9 +27,11 @@
 /* pin tip on left */
 .message-body .leftish {
     position: relative;
-    direction: ltr;
+    justify-self: flex-end;
+    direction: auto;
     border-radius: 15px;
     border-bottom-left-radius: 0px;
+    box-shadow: 0 1px 3px 0 lightgray;
 }
 
 .message-body .leftish::after {
@@ -44,10 +48,12 @@
 /* pin tip on right */
 .message-body .rightish {
     position: relative;
-    direction: rtl;
-    background-color: rgb(158, 158, 158);
+    justify-self: flex-start;
+    direction: auto;
+    background-color: rgb(208 211 228);
     border-radius: 15px;
     border-bottom-right-radius: 0px;
+    box-shadow: 0 1px 3px 0 lightgray;
 }
 
 .message-body .rightish::after {
@@ -57,7 +63,7 @@
     bottom: 0em;
     width: 7px;
     height: 7px;
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(208 211 228);
     border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
 }
 
@@ -86,6 +92,7 @@
     bottom: 0;
 }
 
+/* user input config */
 .footer {
     display: flex;
     justify-content: center;
@@ -93,13 +100,41 @@
     bottom: .5em;
     position: absolute;
     background: white;
-    border: 1px solid blue;
     width: 95%;
-    border-radius: 100vmax;
+    border-radius: 15px;
     right: 0;
     transform: translateX(-3%);
     height: 3em;
 }
+
 .footer .user-input {
     text-align: right;
+    width: 100%;
+    border: 0;
+    margin: 0 .5rem;
+    border-style: none;
+    font-size: 1.2em;
+    word-break: break-word;
+}
+
+.footer .user-input:hover,
+.footer .user-input:active,
+.footer .user-input:focus {
+    outline: 0;
+}
+
+.icon {
+    padding: 10px;
+    background: #0a9d8b;
+    color: white;
+    min-width: 50px;
+    height: 2.5em;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: .3rem;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 1.2rem;
 }

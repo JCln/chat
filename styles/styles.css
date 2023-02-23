@@ -1,7 +1,19 @@
-@import '../styles/dragbar.css';
-@import '../styles/message.css';
-@import '../styles/button.css';
+@import './dragbar.css';
+@import './message.css';
+@import './button.css';
+@import '../fonts/font4/css/font-awesome.min.css';
+@import '../fonts/font5/css/all.min.css';
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: BLotus;
+    src: url(../fonts/BLotus.woff) format("woff2"), url(../fonts/BLotus.woff) format("truetype");
+}
 
 body,
 html {
@@ -14,13 +26,6 @@ html {
     -webkit-tap-highlight-color: transparent;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 250ms;
     direction: rtl;
-    font-family: 'Blotus';
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
 }
 
 h1,
@@ -32,6 +37,15 @@ h6,
 p {
     margin: 0;
     font-weight: 600;
+}
+
+input {
+    font-weight: 600;
+    font-family: 'Blotus';
+}
+button {
+    font-weight: 600;
+    font-family: 'Blotus';
 }
 
 .ltr {
