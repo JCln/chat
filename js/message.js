@@ -7,11 +7,11 @@ let message = [
 ];
 
 function getData() {
-    const dataElement = document.querySelector('#test');
+    const dataElement = document.querySelector('.message-body');
     for (let index = 0; index < message.length; index++) {
-        // element += "<div>" + message[index].text + "</div>";
-        dataElement.insertAdjacentHTML('beforeend', `
-        <div class="${message[index].className}" >
+
+        dataElement.insertAdjacentHTML('afterbegin', `
+        <div class="${message[index].className}">
             ${message[index].text}
         </div>        
   `)
