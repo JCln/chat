@@ -22,6 +22,8 @@
     border-radius: 7px;
     min-height: 3em;
     padding: 0.5em;
+    font-weight: 600;
+    color: #484c5f;
 }
 
 /* pin tip on left */
@@ -137,4 +139,10 @@
 
 .btn {
     font-size: 1.2rem;
+}
+
+/* personal img */
+img {
+    width: 2em;
+    height: 2em;
 }
