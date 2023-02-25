@@ -84,7 +84,7 @@
     content: '';
     position: absolute;
     right: -1.7em;
-    bottom: 0;
+    bottom: 0.5em;
 }
 
 .message-body .leftish::before {
