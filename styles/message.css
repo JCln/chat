@@ -1,6 +1,7 @@
 /* head of the chat */
 .head {
     display: flex;
+    padding: .3em;
 }
 
 .head h1 {
