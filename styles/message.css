@@ -19,7 +19,7 @@
     align-items: center;
     word-break: break-word;
     display: inline-flex;
-    background: white;
+    background: var(--white);
     margin-bottom: .3em;
     border-radius: 7px;
     min-height: 3em;
@@ -57,7 +57,7 @@
     bottom: 0em;
     width: 7px;
     height: 7px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
 }
 
@@ -92,8 +92,8 @@
     width: 1.5em;
     height: 1.5em;
     border-radius: 50%;
-    background: white;
-    box-shadow: 0 0 6px 0 whitesmoke;
+    background: var(--white);
+    box-shadow: 0 0 6px 0 var(--white)smoke;
 }
 
 .message-body .rightish::before {
@@ -116,16 +116,16 @@
     justify-content: center;
     align-items: center;
     position: sticky;
-    background: white;
+    background: var(--white);
     border-radius: 15px;
     right: 0;
     left: 0;
     bottom: .5em;
     height: 3em;
     box-shadow:
-        0 4px 2px white,
-        0 8px 4px white,
-        0 16px 8px white
+        0 4px 2px var(--white),
+        0 8px 4px var(--white),
+        0 16px 8px var(--white)
 }
 
 .footer .user-input {
@@ -146,8 +146,8 @@
 
 .icon {
     padding: 10px;
-    background: #0a9d8b;
-    color: white;
+    background: var(--secondary_1);
+    color: var(--white);
     min-width: 50px;
     height: 2.5em;
     text-align: center;

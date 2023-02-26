@@ -1,6 +1,6 @@
 .btn {
-    color: rgb(0, 161, 107);
-    background-color: #d2e6e7;
+    color: var(--secondary_1);
+    background-color: var(--secondary_2);
     border: 0;
     padding: .3em 1em;
     font-weight: 600;
