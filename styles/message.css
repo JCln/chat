@@ -10,6 +10,7 @@
 /* message body section */
 .message-body {
     display: grid;
+    padding: 0 2em;
 }
 
 .message-body div {
@@ -30,7 +31,6 @@
 .message-body .leftish {
     position: relative;
     justify-self: flex-end;
-    direction: auto;
     border-radius: 15px;
     border-bottom-left-radius: 0px;
     box-shadow: 0 1px 3px 0 lightgray;
@@ -51,7 +51,6 @@
 .message-body .rightish {
     position: relative;
     justify-self: flex-start;
-    direction: auto;
     background-color: rgb(208 211 228);
     border-radius: 15px;
     border-bottom-right-radius: 0px;
@@ -73,6 +72,9 @@
 .message-body div::before {
     content: '';
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1.5em;
     height: 1.5em;
     border-radius: 50%;
@@ -99,14 +101,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: .5em;
-    position: absolute;
+    position: sticky;
     background: white;
-    width: 95%;
     border-radius: 15px;
     right: 0;
-    transform: translateX(-3%);
+    left: 0;
+    bottom: .5em;
     height: 3em;
+    box-shadow:
+        0 4px 2px white,
+        0 8px 4px white,
+        0 16px 8px white
 }
 
 .footer .user-input {

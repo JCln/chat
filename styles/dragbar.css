@@ -3,11 +3,6 @@
     min-height: 100vh;
 }
 
-[class^="panel"] {
-    padding: 2em;
-    background-color: white;
-}
-
 .panel-one {
     position: relative;
     min-width: 19rem;
