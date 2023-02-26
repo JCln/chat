@@ -28,6 +28,19 @@
     color: #484c5f;
 }
 
+/* personal img */
+.message-body div::before img {
+    width: 2em;
+    height: 2em;
+}
+
+.message-body div img {
+    max-width: 15rem;
+    max-height: 15rem;
+    width: 100%;
+    height: 100%;
+}
+
 /* pin tip on left */
 .message-body .leftish {
     position: relative;
@@ -145,10 +158,4 @@
 
 .btn {
     font-size: 1.2rem;
-}
-
-/* personal img */
-img {
-    width: 2em;
-    height: 2em;
 }

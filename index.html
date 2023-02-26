@@ -15,7 +15,12 @@
 <body>
     <div id="drag-container" class="drag-container">
         <div class="panel-one" id="drag-left">
-            <div w3-include-html="message.html"></div>
+            <div class="_panel-one-message" w3-include-html="message.html"></div>
+            <section class="footer">
+                <input id="user-input" class="user-input" spellcheck="false" autocomplete="off" autocorrect="off"
+                    placeholder="پیام خود را بنویسید">
+                <i onclick="messageEnter()" class="fa fa-send icon"></i>
+            </section>
         </div>
         <div class="dragbar" id="dragbar">
         </div>

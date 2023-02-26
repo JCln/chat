@@ -13,6 +13,10 @@
     box-shadow: 0 0 6px 0px lightgray;
 }
 
+.panel-one ._panel-one-message {
+    height: 100%;
+}
+
 .panel-two {
     width: 47%;
 }
