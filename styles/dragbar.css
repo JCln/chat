@@ -3,11 +3,15 @@
     min-height: 100vh;
 }
 
+.panel-one,
+.panel-two {
+    margin: .5em;
+}
+
 .panel-one {
     position: relative;
     min-width: 19rem;
     width: 50%;
-    margin: .5em;
     background: #edf0f5;
     border-radius: 7px;
     box-shadow: 0 0 6px 0px lightgray;
@@ -18,7 +22,8 @@
 }
 
 .panel-two {
-    width: 47%;
+    min-width: 19rem;
+    width: 28rem;
 }
 
 .dragbar {

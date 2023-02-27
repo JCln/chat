@@ -5,6 +5,7 @@
 @import './button.css';
 @import './button.css';
 @import './sidebar.css';
+@import './contact-list.css';
 
 *,
 *::before,
@@ -41,11 +42,7 @@ p {
     font-weight: 600;
 }
 
-input {
-    font-weight: 600;
-    font-family: 'Blotus';
-}
-
+input,
 button {
     font-weight: 600;
     font-family: 'Blotus';

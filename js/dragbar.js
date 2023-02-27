@@ -1,5 +1,5 @@
 const screen = document.getElementById('drag-container');
-// const left = document.getElementById('drag-left');
+const left = document.getElementById('drag-left');
 const right = document.getElementById('drag-right');
 const bar = document.getElementById('dragbar');
 

@@ -1,0 +1,103 @@
+/* header */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2.5em;
+}
+
+.header ._lock {
+    background-color: aliceblue;
+    display: grid;
+    align-items: center;
+    height: 2.5em;
+    margin: auto 1em;
+}
+
+.header ._search {
+    height: 2.5em;
+}
+
+.header ._search input {
+    background-color: lightgray;
+    border: none;
+    padding: 0 .3em;
+    font-size: 1.1em;
+    border-radius: 7px;
+    min-width: 15rem;
+    height: 100%;
+    width: 100%;
+}
+
+.header ._search input:active,
+.header ._search input:focus {
+    background-color: var(--white);
+    border: 1px solid var(--secondary_1);
+}
+
+/* body  */
+main {
+    display: grid;
+    width: 100%;
+}
+
+._item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .3em;
+}
+
+.profile_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_img img {
+    padding: 0 .3em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.top_bottom_w {
+    display: grid;
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.brief,
+title {
+    overflow: hidden;
+    font-weight: 600;
+
+}
+
+.badge {
+    color: var(--white);
+    z-index: 2;
+    border-radius: 100vmax;
+    background-color: gray;
+    min-width: 2em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
